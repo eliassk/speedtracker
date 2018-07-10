@@ -98,7 +98,7 @@ export default {
       name: 'Start render',
       transform: (value) => (value / 1000).toFixed(2),
       unit: 's',
-      description: 'The time until the browser starts painting content to the screen'
+      description: 'The time until the browser starts painting content to the screen (firstPaint)'
     },
     fullyLoaded: {
       color: [3, 181, 170],
@@ -116,10 +116,10 @@ export default {
     },
     TTFB: {
       color: [80, 48, 71],
-      name: 'Back-end',
+      name: 'Back-end (TTFB)',
       transform: (value) => (value / 1000).toFixed(2),
       unit: 's',
-      description: 'The time it takes for the server to respond with the first byte of the response'
+      description: 'The time it takes for the server to respond with the first byte of the response (TTFB)'
     },
     visualComplete: {
       color: [243, 202, 64],
